@@ -1,3 +1,6 @@
 env
 .vscode
 .pytest_cache
+sport_app.db
+dz_orm.py
+__pycache__
