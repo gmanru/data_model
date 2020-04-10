@@ -36,7 +36,7 @@ class Amateur(Base):
     __tablename__ = 'amateur'
 
     id = Column(Integer, primary_key=True)
-    user_id = Column(Integer, ForeignKey(User.id), nullable=False)
+    user_id = Column(Integer, ForeignKey(User.id), unique=True, nullable=False)
     idol = Column(String(22), nullable=False)
     sport_kind = Column(String(22), nullable=False)
 
@@ -47,7 +47,7 @@ class FitnessBlogger(Base):
     __tablename__ = 'fitness_blogger'
 
     id = Column(Integer, primary_key=True)
-    user_id = Column(Integer, ForeignKey(User.id), nullable=False)
+    user_id = Column(Integer, ForeignKey(User.id), unique=True, nullable=False)
     link_page = Column(URLType, nullable=False)
     contact = Column(String(22), nullable=False)
 
