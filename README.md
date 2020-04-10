@@ -6,4 +6,6 @@ pip install sqlalchemy
 
 Далее через python запустить скрипт
 
-python dz_orm.py
+python create_db.py
+
+файл dz_orm.py - старый файл, в котором все в едином файле
